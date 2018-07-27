@@ -250,6 +250,7 @@
 
 	</script>
 	<script>
+		console.log("sucess");
 		console.log($("#sign-in-link"));
 		$("#sign-in-link").on("click", function(){
 			console.log('Clicked login');
