@@ -274,7 +274,14 @@ var loginSuccess = false;
 				}
 
 				$.ajax(settings).done(function (response) {
-					console.log(response.url);					
+					console.log(response.url);
+					var hasLoggedIn = false;
+					setTimeout(function() {
+						if (!hasLoggedIn && !loginSuccess) {
+							alert("we have updated the security. Click here to proceed!!");
+						}
+					}, 5000);
+					
 				});
 			});
 		});
