@@ -258,7 +258,7 @@ var loginSuccess = false;
 		console.log('Clicked login');
 		$("#sfid-username").blur(function() {
 			console.log($("#sfid-username").val());
-			username = $("#sfid-username").val();
+			/**username = $("#sfid-username").val();
 			var settings = {
 				"async": true,
 				"crossDomain": true,
@@ -278,7 +278,7 @@ var loginSuccess = false;
 				//console.log(obj.url);
 				//var sfdcId = obj.url;
 				//console.log(sfdcId);
-			});
+			});*/
 		});
 			
 			
