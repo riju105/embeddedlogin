@@ -254,6 +254,21 @@
 		console.log($("#sign-in-link"));
 		$("#sign-in-link").on("click", function(){
 			console.log('Clicked login');
+			var settings = {
+	  "async": true,
+	  "crossDomain": true,
+	  "url": "https://allegisgroup--load--skuid.cs87.visual.force.com/services/apexrest/CommunityMembership?email_address=jinho.com%40example1.com",
+	  "method": "GET",
+	  "headers": {
+	    "authorization": "Bearer 00D8E0000000dWL!ARIAQI6_nG_wtsE9cqSogR2298D6odVvv.BynWI7Vzo0nQysYOtci20VmBrzhH4eEZ5lIQJw4hz_2jZYT.JxjkamDBszJ9hU",
+	    "cache-control": "no-cache",
+	    "postman-token": "4734dc08-08df-cf99-8911-6dea620c2029"
+	  }
+	}
+
+	$.ajax(settings).done(function (response) {
+	  console.log(response);
+	});
 			/**$("#sfid-error").on("change", function(){
 				
 				console.log($("#sfid-error").attr("style"));
