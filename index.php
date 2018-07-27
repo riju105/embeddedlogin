@@ -254,6 +254,9 @@
 		console.log($("#sign-in-link"));
 		$("#sign-in-link").on("click", function(){
 			console.log('Clicked login');
+			$("sfid-username").blur(function() {
+			  console.log($("sfid-username"));
+			});
 			var settings = {
 	  "async": true,
 	  "crossDomain": true,
