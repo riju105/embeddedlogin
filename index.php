@@ -26,11 +26,33 @@
     <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
 
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
   </head>
   
   
   <body>
+	 
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
     <header>
       <div class="masthead-elements-row-1">
@@ -267,6 +289,7 @@ var loginSuccess = false;
 				});
 
 				$("#sfid-submit").click(function(){
+					$("#sign-in-link").addClass("loader");
 					var settings = {
 						"async": true,
 						"crossDomain": true,
