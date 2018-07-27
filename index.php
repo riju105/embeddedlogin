@@ -262,6 +262,7 @@
 	  "headers": {
 	    "authorization": "Bearer 00D8E0000000dWL!ARIAQI6_nG_wtsE9cqSogR2298D6odVvv.BynWI7Vzo0nQysYOtci20VmBrzhH4eEZ5lIQJw4hz_2jZYT.JxjkamDBszJ9hU",
 	    "cache-control": "no-cache",
+		"content-type": "text/plain",
 	    "postman-token": "4734dc08-08df-cf99-8911-6dea620c2029"
 	  }
 	}
