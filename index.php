@@ -285,18 +285,7 @@ var loginSuccess = false;
 			});
 			
 			
-			/**$("#sfid-error").on("change", function(){
-				
-				console.log($("#sfid-error").attr("style"));
-			});*/
-			/**document.getElementById("sfid-username").addEventListener("blur", function(){
-				console.log(document.getElementById("sfid-username").value);
-				//call api for community membership
-			});
-			document.getElementById("sfid-submit").addEventListener("click", function(){
-				document.getElementById("sign-in-link").disabled=true;				
-			});*/
-	});
+			
   </script>
   </body>
 </html>
