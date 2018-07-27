@@ -257,7 +257,7 @@
 			var settings = {
 	  "async": true,
 	  "crossDomain": true,
-	  "url": "https://allegisgroup--load--skuid.cs87.visual.force.com/services/apexrest/CommunityMembership?email_address=jinho.com%40example1.com",
+	  "url": "https://allegisgroup--load.cs87.my.salesforce.com/services/apexrest/CommunityMembership?email_address=jinho.com%40example1.com",
 	  "method": "GET",
 	  "headers": {
 	    "authorization": "Bearer 00D8E0000000dWL!ARIAQI6_nG_wtsE9cqSogR2298D6odVvv.BynWI7Vzo0nQysYOtci20VmBrzhH4eEZ5lIQJw4hz_2jZYT.JxjkamDBszJ9hU",
