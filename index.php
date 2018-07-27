@@ -274,11 +274,7 @@ var loginSuccess = false;
 				}
 
 				$.ajax(settings).done(function (response) {
-					console.log(response);
-					var obj = $.parseJSON(response);
-					console.log(obj.url);
-					var sfdcId = obj.url;
-					console.log(sfdcId);
+					console.log(response.url);					
 				});
 			});
 		});
