@@ -131,9 +131,10 @@
 	
 	<script>
 
-
+var loginSuccess = false;
 	function onLogin(identity) {
 		console.log('111');
+		loginSuccess = true;
 		var targetDiv = document.querySelector(SFIDWidget.config.target);	
 		
 		var avatar = document.createElement('a'); 
@@ -254,6 +255,8 @@
 		console.log("sucess");
 		console.log($("#sign-in-link"));
 		$("#sign-in-link").on("click", function(){
+			//show spinner
+		});
 			console.log('Clicked login');
 			$("#sfid-username").blur(function() {
 			  console.log($("#sfid-username").val());
@@ -273,6 +276,11 @@
 
 	$.ajax(settings).done(function (response) {
 	  console.log(response);
+		var obj = $.parseJSON(response);
+		console.log(obj.url);
+		var sfdcId = obj.url;
+		console.log(sfdcId);
+		
 	});
 			});
 			
