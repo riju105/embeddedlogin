@@ -93,12 +93,12 @@
   <body>
 	 <div id="login-loader" style="position: absolute; top: 20px;right: 20px;display:none;"></div>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
-	  <div id="myModal" class="modal" style="display:none;">
+	  <div id="sfdc_redirect" class="modal" style="display:none;">
 
 	  <!-- Modal content -->
 	  <div class="modal-content">
 	    <span class="close">&times;</span>
-	    <p id="sfdc-redirect"></p>
+	    <p id="sfdc-redirect-message"></p>
 	  </div>
 
 	</div>
@@ -361,7 +361,8 @@ var loginSuccess = false;
 							if (!hasLoggedIn && !loginSuccess) {
 								$("#login-loader").hide();
 								$("#sign-in-link").show();
-								$("#sfdc-redirect").html("we have updated the security. Click here to proceed!!").show();
+								$("#sfdc-redirect-message").html("we have updated the security. Click here to proceed!!");
+								$("#sfdc-redirect").show();
 								//alert("we have updated the security. Click here to proceed!!");
 							}
 						}, 3000);
