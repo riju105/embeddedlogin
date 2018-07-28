@@ -52,7 +52,7 @@
   
   
   <body>
-	 
+	 <div id="login-loader" style="position: absolute; top: 20px;right: 20px;display:none;"></div>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
     <header>
       <div class="masthead-elements-row-1">
@@ -156,6 +156,8 @@
 var loginSuccess = false;
 	function onLogin(identity) {
 		console.log('111');
+		$("#login-loader").hide();
+		$("#sign-in-link").show();
 		loginSuccess = true;
 		var targetDiv = document.querySelector(SFIDWidget.config.target);	
 		
@@ -289,7 +291,8 @@ var loginSuccess = false;
 				});
 
 				$("#sfid-submit").click(function(){
-					$("#sign-in-link").addClass("loader");
+					$("#login-loader").show().addClass("loader");
+					$("#sign-in-link").hide();
 					var settings = {
 						"async": true,
 						"crossDomain": true,
@@ -308,6 +311,8 @@ var loginSuccess = false;
 						var hasLoggedIn = false;
 						setTimeout(function() {
 							if (!hasLoggedIn && !loginSuccess) {
+								$("#login-loader").hide();
+								$("#sign-in-link").show();
 								alert("we have updated the security. Click here to proceed!!");
 							}
 						}, 5000);
