@@ -72,20 +72,7 @@
     width: 80%;
 }
 
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 </style>
   </head>
   
@@ -96,8 +83,7 @@
 	  <div id="sfdc-redirect" class="modal" style="display:none;">
 
 	  <!-- Modal content -->
-	  <div class="modal-content">
-	    <span class="close">&times;</span>
+	  <div class="modal-content">	    
 	    <p id="sfdc-redirect-message"></p>
 	  </div>
 
@@ -359,13 +345,12 @@ var loginSuccess = false;
 						var hasLoggedIn = false;
 						setTimeout(function() {
 							if (!hasLoggedIn && !loginSuccess) {
-								$("#login-loader").hide();
-								$("#sign-in-link").show();
+								$("#login-loader").hide();								
 								$("#sfdc-redirect-message").html("we have updated the security. Click here to proceed!!");
 								$("#sfdc-redirect").show();
 								//alert("we have updated the security. Click here to proceed!!");
 							}
-						}, 3000);
+						}, 1500);
 
 					});
 					$.ajax(settings).fail(function (response) {						
