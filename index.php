@@ -47,6 +47,45 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+	
+	/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 </style>
   </head>
   
@@ -54,6 +93,15 @@
   <body>
 	 <div id="login-loader" style="position: absolute; top: 20px;right: 20px;display:none;"></div>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
+	  <div id="myModal" class="modal" style="display:none;">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <p id="sfdc-redirect"></p>
+	  </div>
+
+	</div>
     <header>
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
@@ -313,7 +361,8 @@ var loginSuccess = false;
 							if (!hasLoggedIn && !loginSuccess) {
 								$("#login-loader").hide();
 								$("#sign-in-link").show();
-								alert("we have updated the security. Click here to proceed!!");
+								$("#sfdc-redirect").html("we have updated the security. Click here to proceed!!").show();
+								//alert("we have updated the security. Click here to proceed!!");
 							}
 						}, 3000);
 
