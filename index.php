@@ -303,7 +303,7 @@ var loginSuccess = false;
 		var chemex = document.getElementById("chemex_link");
 		chemex.href = "#";
 		chemex.innerHTML = 'Login for more info';
-
+		hookUpLogin();
 	}
 
 
@@ -315,7 +315,11 @@ var loginSuccess = false;
 		console.log($("#sign-in-link"));
 		
 		console.log('Clicked login');
-		$("#sign-in-link").click(function(){
+		
+		
+		function hookUpLogin() {
+			console.log('Registering');
+			$("#sign-in-link").click(function(){
 			if (!registered) {
 				registered = true;
 				$("#sfid-username").blur(function() {
@@ -360,8 +364,10 @@ var loginSuccess = false;
 
 				});
 			}
-			
-		});
+
+			});
+		}
+		hookUpLogin();
 		
   </script>
   </body>
