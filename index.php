@@ -93,7 +93,7 @@
   <body>
 	 <div id="login-loader" style="position: absolute; top: 20px;right: 20px;display:none;"></div>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
-	  <div id="sfdc_redirect" class="modal" style="display:none;">
+	  <div id="sfdc-redirect" class="modal" style="display:none;">
 
 	  <!-- Modal content -->
 	  <div class="modal-content">
