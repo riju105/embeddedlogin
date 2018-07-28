@@ -303,6 +303,7 @@ var loginSuccess = false;
 		var chemex = document.getElementById("chemex_link");
 		chemex.href = "#";
 		chemex.innerHTML = 'Login for more info';
+		registered = false;
 		hookUpLogin();
 	}
 
