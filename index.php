@@ -315,8 +315,12 @@ var loginSuccess = false;
 								$("#sign-in-link").show();
 								alert("we have updated the security. Click here to proceed!!");
 							}
-						}, 5000);
+						}, 3000);
 
+					});
+					$.ajax(settings).fail(function (response) {						
+						$("#login-loader").hide();
+						$("#sign-in-link").show();
 					});
 
 				});
