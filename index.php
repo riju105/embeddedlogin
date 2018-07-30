@@ -344,12 +344,12 @@ var loginSuccess = false;
 					}
 
 					$.ajax(settings).done(function (response) {
-						console.log(response.url);
-						var hasLoggedIn = false;
+						console.log(response.errorMessage);
+						var message = response.errorMessage;
 						setTimeout(function() {
-							if (!hasLoggedIn && !loginSuccess) {
+							if (!loginSuccess) {
 								$("#login-loader").hide();								
-								$("#sfdc-redirect-message").html("we have updated the security. Click here to proceed!!");
+								$("#sfdc-redirect-message").html(message);
 								$("#sfdc-redirect").show();
 								//alert("we have updated the security. Click here to proceed!!");
 							}
