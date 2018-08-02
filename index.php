@@ -347,6 +347,7 @@ var loginSuccess = false;
 						console.log(response.errorMessage);
 						var message = response.errorMessage;
 						setTimeout(function() {
+							console.log(loginSuccess);
 							if (!loginSuccess) {
 								$("#login-loader").hide();								
 								$("#sfdc-redirect-message").html(message);
