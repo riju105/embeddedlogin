@@ -82,9 +82,9 @@
   
   
   <body>
-	  /* CUSTOM CODE TO SHOW THE LOADING IMAGE -- START */
+	  <!-- CUSTOM CODE TO SHOW THE LOADING IMAGE -- START -->
 	 <div id="login-loader" style="position: absolute; top: 20px;right: 20px;display:none;"></div>
-	  /* CUSTOM CODE TO SHOW THE LOADING IMAGE -- END */
+	 <!-- CUSTOM CODE TO SHOW THE LOADING IMAGE -- END -->
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
 	  <div id="sfdc-redirect" class="modal" style="display:none;">
 
