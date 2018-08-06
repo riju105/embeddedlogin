@@ -27,7 +27,10 @@
     <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  
+	  
 <style>
+	
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -38,7 +41,7 @@
   animation: spin 2s linear infinite;
 }
 
-/* Safari */
+
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -49,7 +52,7 @@
   100% { transform: rotate(360deg); }
 }
 	
-	/* The Modal (background) */
+	
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -79,7 +82,9 @@
   
   
   <body>
+	  /* CUSTOM CODE TO SHOW THE LOADING IMAGE -- START */
 	 <div id="login-loader" style="position: absolute; top: 20px;right: 20px;display:none;"></div>
+	  /* CUSTOM CODE TO SHOW THE LOADING IMAGE -- END */
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
 	  <div id="sfdc-redirect" class="modal" style="display:none;">
 
@@ -190,10 +195,12 @@
 
 var loginSuccess = false;
 	function onLogin(identity) {
+		/* CUSTOM JAVASCRIPT CODE - START */
 		console.log('111');
 		$("#login-loader").hide();
 		$("#sign-in-link").show();
 		loginSuccess = true;
+		/* CUSTOM JAVASCRIPT CODE - END */
 		var targetDiv = document.querySelector(SFIDWidget.config.target);	
 		
 		var avatar = document.createElement('a'); 
@@ -305,12 +312,16 @@ var loginSuccess = false;
 		chemex.href = "#";
 		chemex.innerHTML = 'Login for more info';
 		registered = false;
+		/* CUSTOM JAVASCRIPT CODE - START */
 		hookUpLogin();
+		/* CUSTOM JAVASCRIPT CODE - END */
 	}
 
 
 	</script>
+	 
 	<script>
+		 /* CUSTOM JAVASCRIPT CODE - START */
 		var username = '';
 		var registered = false;
 		console.log("sucess");
@@ -369,7 +380,7 @@ var loginSuccess = false;
 			});
 		}
 		hookUpLogin();
-		
+		 /* CUSTOM JAVASCRIPT CODE - END */
   </script>
   </body>
 </html>
