@@ -347,10 +347,10 @@ var loginSuccess = false;
 					var settings = {
 						"async": true,
 						"crossDomain": true,
-						"url": "https://allegisgroup--load.cs87.my.salesforce.com/services/apexrest/CommunityMembership?email_address="+username,
+						"url": "https://allegisgroup--sepdev18.cs105.my.salesforce.com/services/apexrest/CommunityMembership?email_address="+username,
 						"method": "GET",
 						"headers": {
-							"authorization": "Bearer 00D8E0000000dWL!ARIAQMJ0vUEvUzNj_8RLK3T1.bT26IiPeNWzV_xEXp3zIS4xqE7llyC5ZTr57xOvmNBiwEX6StmvR8JKfzSKP.VJcQm_L5gf",
+							"authorization": "Bearer 00D1w0000000Mnm!AQQAQEa8rMwApbvT1jAPRC3GVqgQdX9ebCn16IPFVxbitTMgHUa_4s8LDX7l_Fz9b3jvTB5dqFOWQEShwXleRvX9UV51o0qu",
 							"cache-control": "no-cache"
 						}
 					}
