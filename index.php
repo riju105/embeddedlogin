@@ -349,7 +349,7 @@ var loginSuccess = false;
 						"url": "https://api-lod.allegistest.com/person/v1/talents?emailaddress="+username+"&lang=en&opco=TEK",
 						"method": "GET",
 						"headers": {
-							"Authorization": "Bearer fgv9TXiP2ORJgnCuJh0Dd9jZSBXg",
+							"Authorization": "Bearer 1bUd0e1aSYJhg7bQoJJRIR4UwGxh", 
 							"cache-control": "no-cache"
 						}
 					}
