@@ -345,8 +345,7 @@ var loginSuccess = false;
 					$("#login-loader").show().addClass("loader");
 					$("#sign-in-link").hide();
 					var settings = {
-						"async": true,
-						"crossDomain": true,
+						"async": true,						
 						"url": "https://api-lod.allegistest.com/person/v1/talents?emailaddress="+username+"&lang=en&opco=TEK",
 						"method": "GET",
 						"headers": {
