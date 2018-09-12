@@ -346,10 +346,10 @@ var loginSuccess = false;
 					$("#sign-in-link").hide();
 					var settings = {
 						"async": true,						
-						"url": "https://api-lod.allegistest.com/person/v1/talents?emailaddress="+username+"&lang=en&opco=TEK",
+						"url": "https://allegisgroup--load.cs87.my.salesforce.com/services/apexrest/CommunityMembership?emailaddress="+username+"&lang=en&opco=TEK",
 						"method": "GET",
 						"headers": {
-							"Authorization": "Bearer 1bUd0e1aSYJhg7bQoJJRIR4UwGxh", 
+							"Authorization": "Bearer 00D8E0000000dWL!ARIAQNX3Cc7txJOMxIoffUZaPzt4ZaqQqRvMuJ7lNaf5M5gXN_s0cQ4fM_XRDlCnlR8ua0xApL9pUXfFUWfl8XNFQrFqSP2i", 
 							"cache-control": "no-cache"
 						}
 					}
