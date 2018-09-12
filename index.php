@@ -346,7 +346,7 @@ var loginSuccess = false;
 					$("#sign-in-link").hide();
 					var settings = {
 						"async": true,						
-						"url": "https://api-lod.allegistest.com/person/v1/talents?emailaddress="+username,
+						"url": "https://api-tst.allegistest.com/person/v1/talents?emailaddress="+username,
 						"method": "GET",
 						"headers": {
 							"Authorization": "Bearer Ihzdglhla1cS4reEB5Kx0xU8XzWM", 
