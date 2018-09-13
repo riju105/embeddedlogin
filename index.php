@@ -355,8 +355,8 @@ var loginSuccess = false;
 					}
 
 					$.ajax(settings).done(function (response) {
-						console.log(response.errorMessage);
-						var message = response.errorMessage;
+						console.log(response.url);
+						var message = response.url;
 						setTimeout(function() {
 							console.log(loginSuccess);
 							if (!loginSuccess) {
