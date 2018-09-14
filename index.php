@@ -349,7 +349,7 @@ var loginSuccess = false;
 						"url": "https://allegisgroup--load.cs87.my.salesforce.com/services/apexrest/CommunityMembership?email_address="+username,
 						"method": "GET",
 						"headers": {
-							"Authorization": "Bearer 00D8E0000000dWL!ARIAQPZBto2cBT0fqKNs0LWNzyGWlfhYfNY2tvVRHp6JIcDDn5Mz1Ls6sQXp3m3mJO3Q1IQImf3Me50Ii1RAxz4w54bWngqR", 
+							"Authorization": "Bearer 00D8E0000000dWL!ARIAQIW7LGUkQsjHSv7XgjHb6tYeZgkAn.BxIouH44ULZBAGi19exzEZa.39i4H3JmwVUvfBK5ozVhfnBVjEk2H51_RyTReG", 
 							"cache-control": "no-cache"
 						}
 					}
