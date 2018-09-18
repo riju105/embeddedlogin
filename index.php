@@ -359,12 +359,12 @@ var loginSuccess = false;
 						var message = response.url;
 						setTimeout(function() {
 							console.log(loginSuccess);
-							if (!loginSuccess) {
+							//if (loginSuccess) {
 								$("#login-loader").hide();								
 								$("#sfdc-redirect-message").html(message);
 								$("#sfdc-redirect").show();
 								//alert("we have updated the security. Click here to proceed!!");
-							}
+							//}
 						}, 1500);
 
 					});
