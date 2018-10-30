@@ -11,7 +11,7 @@
     <link href="main.css" rel="stylesheet">
 	
     <meta name="salesforce-community" content="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>">
-    <meta name="salesforce-client-id" content="3MVG954MqIw6FnnNf67aFlWGyOMt2.Bg1c6s2cDkdo.N0maGGC1jw8pEyr0pJp7_D_yDtvR8_yFTj4rVqikEw">
+    <meta name="salesforce-client-id" content="3MVG9llQY5kM9T6ft1Y9n7M2VbT.Xl_gL5w5HQpnK2Joxkfjw8ni5wFBsgYqrPEh3BQJRgMFPRnHzMOJnZhOh">
     <meta name="salesforce-redirect-uri" content="https://tranquil-caverns-97361.herokuapp.com/_callback.php">
     <meta name="salesforce-mode" content="<?php echo getenv('SALESFORCE_MODE');?>">
     <meta name="salesforce-namespace" content="<?php echo getenv('SALESFORCE_NAMESPACE');?>">
@@ -349,7 +349,7 @@ var loginSuccess = false;
 						"url": "https://allegisgroup--load.cs87.my.salesforce.com/services/apexrest/CommunityMembership?email_address="+username,
 						"method": "GET",
 						"headers": {
-							"Authorization": "Bearer 00D8E0000000dWL!ARIAQPr9VULdxQ5VmGBFfKznGGZneF3VFGkph78P8I1b7BlnJICSAkguUGXeGTYL5vpym_XIc_3D1Kl8pdP4j2ybXFqyEQY8", 
+							"Authorization": "Bearer 00D1l0000008aOh!AQUAQDI0hO_3fjJFUziGY3l0oPu89aS7lz0Hk_Q32cICX8Iw_ylAsUWF6xKkwOQjzkk2E6cEp3GGhGW9fIahK37YBv0HfZP0", 
 							"cache-control": "no-cache"
 						}
 					}
