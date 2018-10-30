@@ -346,7 +346,7 @@ var loginSuccess = false;
 					$("#sign-in-link").hide();
 					var settings = {
 						"async": true,						
-						"url": "https://allegisgroup--load.cs87.my.salesforce.com/services/apexrest/CommunityMembership?email_address="+username,
+						"url": "https://allegisgroup--load.cs108.my.salesforce.com/services/apexrest/CommunityMembership?email_address="+username,
 						"method": "GET",
 						"headers": {
 							"Authorization": "Bearer 00D1l0000008aOh!AQUAQDI0hO_3fjJFUziGY3l0oPu89aS7lz0Hk_Q32cICX8Iw_ylAsUWF6xKkwOQjzkk2E6cEp3GGhGW9fIahK37YBv0HfZP0", 
