@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<Changes made by Supriyo>
+<Changes made by Supriyo-This change is accepted>
 <html lang="en">
   <head>
     <meta charset="utf-8">
